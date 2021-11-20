@@ -1,0 +1,101 @@
+
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+ <style>
+    
+   #box {
+        box-shadow: 5px 5px 5px 5px grey;
+        width: 700px;
+        height: 40em;
+        position: relative;
+        left: 25%;
+        top: 10%;
+        background: url("img/background.png")fixed;
+        background-size:contain;
+     }
+       #inputs {
+           display: flex;
+           flex-wrap: wrap;
+           width: 250px;
+           
+       }
+     .input{
+         border-bottom-color: #ffc900;
+         border-top: none;
+         border-left: none;
+         border-right: none;
+         width: 245px;
+         height: 40px;
+         margin-bottom: 2.5em;
+         position: relative;
+         top: 10em;
+     }
+     ::placeholder{
+         text-align: right;
+         opacity: 40%;
+     }
+     #newStudent {
+         color:#ffc900;
+         font-family: Tajawal;
+         font-size: 35px;
+         position: relative;
+         top: 2em;
+             
+     }
+     #submitBtn {
+         background-color: #ffc900;
+         width: 90px;
+         height: 40px;
+         border-color: transparent;
+         border-radius: 15px;
+         position: relative;
+         top: 8em;
+         left: 3.5em;
+         
+     }
+     #submitBtn, select, textarea {
+         color: #fff;
+         font-family: Tajawal;
+         font-size: 20px;
+     }
+     #submitBtn:hover {
+        background-color:  #CB9F08;
+         cursor: pointer;
+     }
+    
+</style>   
+    
+    
+    
+    
+    
+</head>
+
+<body>
+  <div id="box">
+      
+     <center>
+         <form method="post" action="reg.php">
+         <h2 id="newStudent">تسجيل طالب جديد</h2>
+      <div id="inputs">
+      <input class="input" name="name" type="text" id="StudentName" placeholder="اسم الطالب/ـة">
+      <input class="input" name="username" type="text" id="username" placeholder="Ahmed45 :اسم المستخدم مثال">
+      <input class="input" name="password" type="password" id="pass" placeholder="كلمة السر">
+          <input type="submit" value="تسجيل" id="submitBtn">
+      </div>
+         </form>
+      </center>
+    </div>
+    
+    
+    
+    
+    
+</body>
+
+
+
+</html>

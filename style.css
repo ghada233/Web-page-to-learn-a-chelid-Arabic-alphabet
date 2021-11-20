@@ -1,0 +1,215 @@
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+html , input {
+    /* 1rem  */
+    font-size: 62.5%;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+   
+    overflow: hidden;
+}
+@media (min-width: 700px) {
+    body {
+        background-image: url(img/background.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+}
+
+
+header {
+    width: 95vw;
+    padding: 1rem;
+    height: 18vh;   
+    display: -webkit-box;   
+    display: -ms-flexbox;   
+    display: flex; 
+    -webkit-box-orient: horizontal; 
+    -webkit-box-direction: reverse; 
+        -ms-flex-direction: row-reverse; 
+            flex-direction: row-reverse;
+}
+.logo{
+    height: 100%;
+
+}
+.blob {
+    position: fixed;
+    top: -400px;
+    left: -400px;
+    width: 1000px;
+    z-index: -1;
+  }
+.main{
+    width: 70vw;
+    position: relative;
+    -webkit-transform: translate(-20%,-20%);
+        -ms-transform: translate(-20%,-20%);
+            transform: translate(-20%,-20%);
+    margin: 10rem;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+}
+@media (min-width: 700px) {
+    .main{
+        position: relative;
+        left: 50%;
+        -webkit-transform: translate(-60%,-20%);
+            -ms-transform: translate(-60%,-20%);
+                transform: translate(-60%,-20%);
+    }
+}
+
+h1{
+    text-align: right;
+    font-size: 4rem;
+    color: #060C54;
+    font-weight: 300;
+}
+
+ .text-p{
+    font-size: 4.5rem;
+    color: #FF7994;
+    font-weight: 400;
+}
+form{
+    text-align: center;
+    height: 20vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+}
+form .name{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+form .name > *{
+    margin: 15px;
+}
+
+
+.name label {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #FFC300 ;
+}
+.name input[type=text] {
+    width: 25rem;
+    height: 4rem;
+    border: 2px solid rgb(120, 166, 173);
+    border-radius: 20px;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.name input[type=text]:focus {
+    outline: none;
+    border: 2px solid #FF7994;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+  }
+
+  /* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* IMAGE STYLES */
+  [type=radio] + ion-icon {
+    font-size: 6rem;
+    cursor: pointer;
+    color: #060C54;
+  }
+ 
+  
+  /* CHECKED STYLES */
+  [type=radio]:checked + ion-icon {
+    color: #FF7994;
+  }
+
+  .submit-button{
+      margin: 1.5rem;
+      font-size: 2rem;
+      position: relative;
+      top: 2.5em;
+      width: 12rem;
+      height: 4rem;
+      border: none;
+      border-radius: 10rem;
+      color: #060C54;
+      background-color: #FFC300;
+      cursor: pointer;
+  }
+  .submit-button:hover{
+    background-color: #FF7994;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+  }
+  .board-background{
+    position: fixed;
+    top: 60vh;
+    left: 65vw;
+    z-index: -1;
+  }
+
+  .board {
+      width: 30rem;
+
+  }
+
+  @media (max-width: 700px) {
+    .board-background{
+        display: none;
+    }
+}
+ion-icon{
+    position: relative;
+    top: 0.5em;
+}
+
